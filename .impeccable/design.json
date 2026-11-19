@@ -1,0 +1,674 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-18T09:44:39.302Z",
+  "title": "Design System: Smart Study Planner",
+  "extensions": {
+    "colorMeta": {
+      "frame": {
+        "role": "neutral",
+        "displayName": "Slate Frame",
+        "canonical": "#1f2b36",
+        "tonalRamp": [
+          "#030c16",
+          "#1a2530",
+          "#35414d",
+          "#525f6c",
+          "#74828f",
+          "#98a7b4",
+          "#bdcddb",
+          "#e1f1ff"
+        ]
+      },
+      "frame-raised": {
+        "role": "neutral",
+        "displayName": "Raised Slate",
+        "canonical": "#2d3b48",
+        "tonalRamp": [
+          "#020c17",
+          "#182532",
+          "#33414f",
+          "#51606e",
+          "#728291",
+          "#96a7b6",
+          "#bccddd",
+          "#dff1ff"
+        ]
+      },
+      "frame-ink": {
+        "role": "neutral",
+        "displayName": "Frame Ink",
+        "canonical": "#eef2f4",
+        "tonalRamp": [
+          "#090c0d",
+          "#222526",
+          "#3d4042",
+          "#5b5e60",
+          "#7d8183",
+          "#a1a5a7",
+          "#c7cbcd",
+          "#ebeff1"
+        ]
+      },
+      "frame-muted": {
+        "role": "neutral",
+        "displayName": "Frame Muted",
+        "canonical": "#a9b8c4",
+        "tonalRamp": [
+          "#030c14",
+          "#1a262f",
+          "#35424b",
+          "#52606a",
+          "#74828e",
+          "#98a7b3",
+          "#becdd9",
+          "#e1f1fe"
+        ]
+      },
+      "page": {
+        "role": "neutral",
+        "displayName": "Page Enamel",
+        "canonical": "#dde3dc",
+        "tonalRamp": [
+          "#090c08",
+          "#212520",
+          "#3c413c",
+          "#5a5f59",
+          "#7d827c",
+          "#a1a6a0",
+          "#c7ccc6",
+          "#eaf0e9"
+        ]
+      },
+      "board": {
+        "role": "neutral",
+        "displayName": "Board Enamel",
+        "canonical": "#cdd5cb",
+        "tonalRamp": [
+          "#080d07",
+          "#20261f",
+          "#3b423a",
+          "#596057",
+          "#7b837a",
+          "#a0a79e",
+          "#c5cdc3",
+          "#e9f1e7"
+        ]
+      },
+      "groove": {
+        "role": "neutral",
+        "displayName": "Groove",
+        "canonical": "#bcc6ba",
+        "tonalRamp": [
+          "#070d06",
+          "#1f261d",
+          "#3a4239",
+          "#586156",
+          "#7a8378",
+          "#9ea89c",
+          "#c4cec2",
+          "#e8f2e6"
+        ]
+      },
+      "board-line": {
+        "role": "neutral",
+        "displayName": "Board Line",
+        "canonical": "#a8b3a6",
+        "tonalRamp": [
+          "#060d05",
+          "#1e271d",
+          "#3a4338",
+          "#576155",
+          "#798477",
+          "#9da89b",
+          "#c3cec1",
+          "#e7f2e5"
+        ]
+      },
+      "sheet": {
+        "role": "neutral",
+        "displayName": "Sheet",
+        "canonical": "#f7f8f5",
+        "tonalRamp": [
+          "#0b0b0a",
+          "#242422",
+          "#3f403e",
+          "#5d5e5b",
+          "#80817e",
+          "#a4a5a2",
+          "#cacbc8",
+          "#eeefec"
+        ]
+      },
+      "sheet-recess": {
+        "role": "neutral",
+        "displayName": "Sheet Recess",
+        "canonical": "#eceee9",
+        "tonalRamp": [
+          "#0a0c09",
+          "#232521",
+          "#3f403c",
+          "#5d5e5a",
+          "#7f817c",
+          "#a3a5a1",
+          "#c9cbc6",
+          "#edefea"
+        ]
+      },
+      "sheet-line": {
+        "role": "neutral",
+        "displayName": "Sheet Line",
+        "canonical": "#d0d6ce",
+        "tonalRamp": [
+          "#090c07",
+          "#212620",
+          "#3d413b",
+          "#5a5f58",
+          "#7d827b",
+          "#a1a79f",
+          "#c7cdc5",
+          "#eaf1e8"
+        ]
+      },
+      "control-line": {
+        "role": "neutral",
+        "displayName": "Control Line",
+        "canonical": "#b3bdb2",
+        "tonalRamp": [
+          "#070d06",
+          "#1f261e",
+          "#3a4239",
+          "#586157",
+          "#7a8379",
+          "#9ea89d",
+          "#c4cec3",
+          "#e7f2e6"
+        ]
+      },
+      "card": {
+        "role": "neutral",
+        "displayName": "Card Stock",
+        "canonical": "#fdfdfb",
+        "tonalRamp": [
+          "#0b0b0a",
+          "#242423",
+          "#40403e",
+          "#5e5e5c",
+          "#80807e",
+          "#a5a5a3",
+          "#cacac9",
+          "#eeeeec"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "canonical": "#1b252e",
+        "tonalRamp": [
+          "#040c14",
+          "#1b252e",
+          "#36414b",
+          "#545f6a",
+          "#76828d",
+          "#9aa6b2",
+          "#bfccd8",
+          "#e3f0fd"
+        ]
+      },
+      "ink-2": {
+        "role": "neutral",
+        "displayName": "Ink 2",
+        "canonical": "#44525f",
+        "tonalRamp": [
+          "#030c16",
+          "#192531",
+          "#34414e",
+          "#515f6d",
+          "#738290",
+          "#97a7b6",
+          "#bccddc",
+          "#e0f1ff"
+        ]
+      },
+      "ink-3": {
+        "role": "neutral",
+        "displayName": "Ink 3",
+        "canonical": "#5f6c78",
+        "tonalRamp": [
+          "#040c15",
+          "#1a252f",
+          "#35414c",
+          "#535f6b",
+          "#75828e",
+          "#99a7b4",
+          "#becdda",
+          "#e2f1ff"
+        ]
+      },
+      "signal": {
+        "role": "primary",
+        "displayName": "Signal Yellow",
+        "canonical": "#f5bd1f",
+        "tonalRamp": [
+          "#260000",
+          "#451200",
+          "#653200",
+          "#865200",
+          "#ab7600",
+          "#d29b00",
+          "#fac128",
+          "#ffe65a"
+        ]
+      },
+      "signal-deep": {
+        "role": "primary",
+        "displayName": "Signal Deep",
+        "canonical": "#9a6f00",
+        "tonalRamp": [
+          "#210000",
+          "#3f1800",
+          "#5e3600",
+          "#7e5500",
+          "#a37815",
+          "#ca9d45",
+          "#f1c36c",
+          "#ffe790"
+        ]
+      },
+      "signal-tint": {
+        "role": "primary",
+        "displayName": "Signal Tint",
+        "canonical": "#fcf0c8",
+        "tonalRamp": [
+          "#130900",
+          "#2d2300",
+          "#493f1c",
+          "#685d3a",
+          "#8b805b",
+          "#b0a47f",
+          "#d6caa3",
+          "#faeec7"
+        ]
+      },
+      "fault": {
+        "role": "secondary",
+        "displayName": "Fault Red",
+        "canonical": "#b3352a",
+        "tonalRamp": [
+          "#370000",
+          "#5c0000",
+          "#810000",
+          "#a6281f",
+          "#d05043",
+          "#fa7766",
+          "#ff9d8b",
+          "#ffc2ae"
+        ]
+      },
+      "fault-deep": {
+        "role": "secondary",
+        "displayName": "Fault Deep",
+        "canonical": "#8a2219",
+        "tonalRamp": [
+          "#320000",
+          "#550000",
+          "#790e08",
+          "#9e352a",
+          "#c65a4c",
+          "#f07f70",
+          "#ffa594",
+          "#ffc9b7"
+        ]
+      },
+      "fault-tint": {
+        "role": "secondary",
+        "displayName": "Fault Tint",
+        "canonical": "#f9e3de",
+        "tonalRamp": [
+          "#140705",
+          "#2f201c",
+          "#4c3b37",
+          "#6b5955",
+          "#8f7b77",
+          "#b49f9b",
+          "#dac5c0",
+          "#ffe9e4"
+        ]
+      },
+      "ok": {
+        "role": "secondary",
+        "displayName": "Running Green",
+        "canonical": "#2c7550",
+        "tonalRamp": [
+          "#001500",
+          "#003010",
+          "#004e2c",
+          "#236d49",
+          "#4a916b",
+          "#6fb78e",
+          "#95deb3",
+          "#b8ffd7"
+        ]
+      },
+      "d1-easy": {
+        "role": "tertiary",
+        "displayName": "D1 Easy",
+        "canonical": "#2c7550",
+        "tonalRamp": [
+          "#001500",
+          "#003010",
+          "#004e2c",
+          "#236d49",
+          "#4a916b",
+          "#6fb78e",
+          "#95deb3",
+          "#b8ffd7"
+        ]
+      },
+      "d2-moderate": {
+        "role": "tertiary",
+        "displayName": "D2 Moderate",
+        "canonical": "#3561aa",
+        "tonalRamp": [
+          "#00003f",
+          "#001c5f",
+          "#113b81",
+          "#305ba4",
+          "#527fcb",
+          "#75a5f3",
+          "#9acbff",
+          "#bcf0ff"
+        ]
+      },
+      "d3-medium": {
+        "role": "tertiary",
+        "displayName": "D3 Medium",
+        "canonical": "#e8b21f",
+        "tonalRamp": [
+          "#250000",
+          "#441300",
+          "#633200",
+          "#845200",
+          "#aa7600",
+          "#d09b00",
+          "#f8c239",
+          "#ffe665"
+        ]
+      },
+      "d4-hard": {
+        "role": "tertiary",
+        "displayName": "D4 Hard",
+        "canonical": "#e2752b",
+        "tonalRamp": [
+          "#340000",
+          "#570000",
+          "#7b0f00",
+          "#9f3800",
+          "#c85d00",
+          "#f1833b",
+          "#ffa964",
+          "#ffcd88"
+        ]
+      },
+      "d5-very-hard": {
+        "role": "tertiary",
+        "displayName": "D5 Very hard",
+        "canonical": "#b3352a",
+        "tonalRamp": [
+          "#370000",
+          "#5c0000",
+          "#810000",
+          "#a6281f",
+          "#d05043",
+          "#fa7766",
+          "#ff9d8b",
+          "#ffc2ae"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Product name in the frame only; uppercase."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Sheet headings (h2); uppercase in fault red on fault tags."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "h3 and sub-headings."
+      },
+      "nav": {
+        "displayName": "Nav",
+        "purpose": "Frame tabs; uppercase."
+      },
+      "card-id": {
+        "displayName": "Card ID",
+        "purpose": "Course IDs on chips, T-card tabs, graph nodes, order strip."
+      },
+      "label": {
+        "displayName": "Placard",
+        "purpose": "Uppercase labels for board parts: column heads, tray, fields, table headers."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Reading text with tabular figures; notes 72ch, captions 90ch."
+      },
+      "control": {
+        "displayName": "Control",
+        "purpose": "Buttons and segmented options."
+      }
+    },
+    "shadows": [
+      {
+        "name": "groove",
+        "value": "inset 0 2px 4px rgba(30,45,35,0.22), inset 0 -1px 0 rgba(255,255,255,0.4)",
+        "purpose": "Recessed semester columns."
+      },
+      {
+        "name": "sheet-rest",
+        "value": "0 1px 2px rgba(20,30,40,0.06)",
+        "purpose": "Paper sheets on the page."
+      },
+      {
+        "name": "lift",
+        "value": "0 1px 0 rgba(20,30,40,0.12), 0 2px 6px rgba(20,30,40,0.1)",
+        "purpose": "T-cards and the course form at rest (--lift, all layers soft; the third seats the card in its slot)."
+      },
+      {
+        "name": "lift-hover",
+        "value": "0 2px 0 rgba(20,30,40,0.12), 0 6px 14px rgba(20,30,40,0.16)",
+        "purpose": "T-card on hover."
+      },
+      {
+        "name": "active-ring",
+        "value": "0 0 0 2px #f5bd1f, 0 6px 16px rgba(20,30,40,0.22)",
+        "purpose": "The T-card being filed during replay."
+      },
+      {
+        "name": "floating-panel",
+        "value": "0 10px 30px rgba(20,30,40,0.18)",
+        "purpose": "Call-to-action card over the empty board only."
+      },
+      {
+        "name": "focus-ring-input",
+        "value": "0 0 0 3px rgba(245,189,31,0.55)",
+        "purpose": "Input focus."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-out",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "All authored movement: tab bar, card filing, chip bumps, hover lifts."
+      },
+      {
+        "name": "state-fast",
+        "value": "140ms",
+        "purpose": "Button, input and icon-button color/border transitions."
+      },
+      {
+        "name": "state",
+        "value": "240ms",
+        "purpose": "Tab bar rise, T-card lift, column ring."
+      },
+      {
+        "name": "file-in",
+        "value": "520ms from translate(-18px,-14px) rotate(-2deg) blur(2px), opacity 0",
+        "purpose": "Cards being filed into columns during replay; the one authored motion."
+      },
+      {
+        "name": "bump",
+        "value": "300-420ms from translateY(-10px), opacity 0",
+        "purpose": "Ghosts and chips appearing during replay."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "0.01ms",
+        "purpose": "All animation and transition durations under prefers-reduced-motion."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "stack-courses",
+        "value": "960px"
+      },
+      {
+        "name": "mobile",
+        "value": "760px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Button",
+      "kind": "button",
+      "refersTo": "button",
+      "description": "Card-stock default button for secondary actions (Export CSV, Retry, Edit).",
+      "html": "<button class=\"ds-btn\"><svg width=\"17\" height=\"17\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4\"/><path d=\"m7 10 5 5 5-5\"/><path d=\"M12 15V3\"/></svg>Export CSV</button>",
+      "css": ":host{--frame:#1f2b36;--frame-2:#2d3b48;--frame-ink:#eef2f4;--frame-muted:#a9b8c4;--board:#cdd5cb;--groove:#bcc6ba;--sheet:#f7f8f5;--sheet-2:#eceee9;--sheet-line:#d0d6ce;--card:#fdfdfb;--ink:#1b252e;--ink-2:#44525f;--ink-3:#5f6c78;--signal:#f5bd1f;--signal-deep:#9a6f00;--fault:#b3352a;--fault-tint:#f9e3de;--d1:#2c7550;--d2:#3561aa;--d3:#e8b21f;--d4:#e2752b;--d5:#b3352a;--display:'Barlow Condensed','Arial Narrow',sans-serif;--body:'Barlow',system-ui,sans-serif;--radius:3px;--ease-out:cubic-bezier(0.16,1,0.3,1);--lift:0 1px 0 rgba(20,30,40,0.12),0 2px 6px rgba(20,30,40,0.1)} .ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:38px;padding:0 14px;border:1px solid #b3bdb2;border-radius:var(--radius);background:var(--card);color:var(--ink);font:600 0.9rem/1 var(--body);cursor:pointer;transition:background-color 140ms,border-color 140ms,transform 140ms var(--ease-out)} .ds-btn svg{width:17px;height:17px} .ds-btn:hover{background:#edf0ea;border-color:#96a294} .ds-btn:active{transform:translateY(1px)} .ds-btn:focus-visible{outline:2px solid var(--signal-deep);outline-offset:2px}"
+    },
+    {
+      "name": "Signal Button",
+      "kind": "button",
+      "refersTo": "button-signal",
+      "description": "The one primary action on a screen, in signal yellow with a bevelled bottom edge.",
+      "html": "<button class=\"ds-btn-signal\">Run benchmark</button>",
+      "css": ":host{--frame:#1f2b36;--frame-2:#2d3b48;--frame-ink:#eef2f4;--frame-muted:#a9b8c4;--board:#cdd5cb;--groove:#bcc6ba;--sheet:#f7f8f5;--sheet-2:#eceee9;--sheet-line:#d0d6ce;--card:#fdfdfb;--ink:#1b252e;--ink-2:#44525f;--ink-3:#5f6c78;--signal:#f5bd1f;--signal-deep:#9a6f00;--fault:#b3352a;--fault-tint:#f9e3de;--d1:#2c7550;--d2:#3561aa;--d3:#e8b21f;--d4:#e2752b;--d5:#b3352a;--display:'Barlow Condensed','Arial Narrow',sans-serif;--body:'Barlow',system-ui,sans-serif;--radius:3px;--ease-out:cubic-bezier(0.16,1,0.3,1);--lift:0 1px 0 rgba(20,30,40,0.12),0 2px 6px rgba(20,30,40,0.1)} .ds-btn-signal{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:38px;padding:0 14px;border:1px solid #b3bdb2;border-radius:var(--radius);background:var(--card);color:var(--ink);font:600 0.9rem/1 var(--body);cursor:pointer;transition:background-color 140ms,border-color 140ms,transform 140ms var(--ease-out);border-color:var(--signal-deep);background:var(--signal);box-shadow:inset 0 -2px 0 rgba(120,80,0,0.25)} .ds-btn-signal:hover{background:#ffc934} .ds-btn-signal:active{transform:translateY(1px)} .ds-btn-signal:focus-visible{outline:2px solid var(--signal-deep);outline-offset:2px}"
+    },
+    {
+      "name": "Danger Button",
+      "kind": "button",
+      "refersTo": "button-danger",
+      "description": "Destructive action (Clear all): default button with fault-red text.",
+      "html": "<button class=\"ds-btn-danger\">Clear all</button>",
+      "css": ":host{--frame:#1f2b36;--frame-2:#2d3b48;--frame-ink:#eef2f4;--frame-muted:#a9b8c4;--board:#cdd5cb;--groove:#bcc6ba;--sheet:#f7f8f5;--sheet-2:#eceee9;--sheet-line:#d0d6ce;--card:#fdfdfb;--ink:#1b252e;--ink-2:#44525f;--ink-3:#5f6c78;--signal:#f5bd1f;--signal-deep:#9a6f00;--fault:#b3352a;--fault-tint:#f9e3de;--d1:#2c7550;--d2:#3561aa;--d3:#e8b21f;--d4:#e2752b;--d5:#b3352a;--display:'Barlow Condensed','Arial Narrow',sans-serif;--body:'Barlow',system-ui,sans-serif;--radius:3px;--ease-out:cubic-bezier(0.16,1,0.3,1);--lift:0 1px 0 rgba(20,30,40,0.12),0 2px 6px rgba(20,30,40,0.1)} .ds-btn-danger{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:38px;padding:0 14px;border:1px solid #b3bdb2;border-radius:var(--radius);background:var(--card);color:var(--ink);font:600 0.9rem/1 var(--body);cursor:pointer;transition:background-color 140ms,border-color 140ms,transform 140ms var(--ease-out);color:var(--fault)} .ds-btn-danger:hover{background:var(--fault-tint);border-color:#d8a198} .ds-btn-danger:focus-visible{outline:2px solid var(--signal-deep);outline-offset:2px}"
+    },
+    {
+      "name": "Segmented Control",
+      "kind": "chip",
+      "refersTo": "segmented",
+      "description": "Recessed track with a slate key for the selected option; ranking key and view toggle.",
+      "html": "<div class=\"ds-seg\" role=\"radiogroup\"><button role=\"radio\" aria-checked=\"true\">Priority</button><button role=\"radio\" aria-checked=\"false\">Deadline</button><button role=\"radio\" aria-checked=\"false\">Credits</button></div>",
+      "css": ":host{--frame:#1f2b36;--frame-2:#2d3b48;--frame-ink:#eef2f4;--frame-muted:#a9b8c4;--board:#cdd5cb;--groove:#bcc6ba;--sheet:#f7f8f5;--sheet-2:#eceee9;--sheet-line:#d0d6ce;--card:#fdfdfb;--ink:#1b252e;--ink-2:#44525f;--ink-3:#5f6c78;--signal:#f5bd1f;--signal-deep:#9a6f00;--fault:#b3352a;--fault-tint:#f9e3de;--d1:#2c7550;--d2:#3561aa;--d3:#e8b21f;--d4:#e2752b;--d5:#b3352a;--display:'Barlow Condensed','Arial Narrow',sans-serif;--body:'Barlow',system-ui,sans-serif;--radius:3px;--ease-out:cubic-bezier(0.16,1,0.3,1);--lift:0 1px 0 rgba(20,30,40,0.12),0 2px 6px rgba(20,30,40,0.1)} .ds-seg{display:inline-flex;padding:3px;border:1px solid #b3bdb2;border-radius:var(--radius);background:var(--sheet-2)} .ds-seg button{min-height:32px;padding:0 12px;border:0;border-radius:2px;background:transparent;color:var(--ink-2);font:600 0.9rem/1 var(--body);cursor:pointer;transition:background-color 160ms,color 160ms} .ds-seg button:hover{color:var(--ink)} .ds-seg button[aria-checked=\"true\"]{background:var(--frame);color:var(--frame-ink);box-shadow:0 1px 2px rgba(0,0,0,0.2)} .ds-seg button:focus-visible{outline:2px solid var(--signal-deep);outline-offset:2px}"
+    },
+    {
+      "name": "Text Field",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "White field with placard label; focus turns the border slate and adds a signal ring.",
+      "html": "<label class=\"ds-field\"><span>Course name</span><input placeholder=\"Data Structures\" /></label>",
+      "css": ":host{--frame:#1f2b36;--frame-2:#2d3b48;--frame-ink:#eef2f4;--frame-muted:#a9b8c4;--board:#cdd5cb;--groove:#bcc6ba;--sheet:#f7f8f5;--sheet-2:#eceee9;--sheet-line:#d0d6ce;--card:#fdfdfb;--ink:#1b252e;--ink-2:#44525f;--ink-3:#5f6c78;--signal:#f5bd1f;--signal-deep:#9a6f00;--fault:#b3352a;--fault-tint:#f9e3de;--d1:#2c7550;--d2:#3561aa;--d3:#e8b21f;--d4:#e2752b;--d5:#b3352a;--display:'Barlow Condensed','Arial Narrow',sans-serif;--body:'Barlow',system-ui,sans-serif;--radius:3px;--ease-out:cubic-bezier(0.16,1,0.3,1);--lift:0 1px 0 rgba(20,30,40,0.12),0 2px 6px rgba(20,30,40,0.1)} .ds-field{display:flex;flex-direction:column;gap:5px} .ds-field span{font-family:var(--display);font-size:0.85rem;font-weight:600;letter-spacing:0.07em;text-transform:uppercase;color:var(--ink-2)} .ds-field input{min-height:38px;padding:6px 10px;border:1px solid #b3bdb2;border-radius:var(--radius);background:#fff;color:var(--ink);font:500 0.95rem var(--body);transition:border-color 140ms,box-shadow 140ms} .ds-field input::placeholder{color:#7d8893} .ds-field input:hover{border-color:#8f9b8e} .ds-field input:focus{outline:none;border-color:var(--frame);box-shadow:0 0 0 3px rgba(245,189,31,0.55)}"
+    },
+    {
+      "name": "Frame Tabs",
+      "kind": "nav",
+      "refersTo": "tab",
+      "description": "Uppercase condensed tabs on the slate frame; the current tab raises a signal bar from the bottom edge.",
+      "html": "<nav class=\"ds-frame\"><button class=\"ds-tab\" aria-current=\"page\">Study Plan</button><button class=\"ds-tab\">Courses <span class=\"ds-count\">19</span></button><button class=\"ds-tab\">Benchmark</button></nav>",
+      "css": ":host{--frame:#1f2b36;--frame-2:#2d3b48;--frame-ink:#eef2f4;--frame-muted:#a9b8c4;--board:#cdd5cb;--groove:#bcc6ba;--sheet:#f7f8f5;--sheet-2:#eceee9;--sheet-line:#d0d6ce;--card:#fdfdfb;--ink:#1b252e;--ink-2:#44525f;--ink-3:#5f6c78;--signal:#f5bd1f;--signal-deep:#9a6f00;--fault:#b3352a;--fault-tint:#f9e3de;--d1:#2c7550;--d2:#3561aa;--d3:#e8b21f;--d4:#e2752b;--d5:#b3352a;--display:'Barlow Condensed','Arial Narrow',sans-serif;--body:'Barlow',system-ui,sans-serif;--radius:3px;--ease-out:cubic-bezier(0.16,1,0.3,1);--lift:0 1px 0 rgba(20,30,40,0.12),0 2px 6px rgba(20,30,40,0.1)} .ds-frame{display:flex;gap:4px;padding:14px 16px 0;background:var(--frame);border-bottom:4px solid var(--frame-2)} .ds-tab{position:relative;display:inline-flex;align-items:center;gap:8px;padding:10px 16px 14px;border:0;background:transparent;color:var(--frame-muted);font-family:var(--display);font-size:1.05rem;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;cursor:pointer;transition:color 160ms} .ds-tab::after{content:'';position:absolute;left:12px;right:12px;bottom:0;height:4px;border-radius:2px 2px 0 0;background:var(--signal);transform:scaleY(0);transform-origin:bottom;transition:transform 240ms var(--ease-out)} .ds-tab:hover,.ds-tab[aria-current=\"page\"]{color:var(--frame-ink)} .ds-tab[aria-current=\"page\"]::after{transform:scaleY(1)} .ds-tab:focus-visible{outline:2px solid var(--signal);outline-offset:-2px} .ds-count{min-width:22px;padding:0 6px;border-radius:2px;background:var(--frame-2);color:var(--frame-ink);font-size:0.85rem;letter-spacing:0;text-align:center}"
+    },
+    {
+      "name": "Course Chip",
+      "kind": "chip",
+      "refersTo": "chip",
+      "description": "Course ID filled with its difficulty tone; used in the tray, replay queue and cycle loop. The last chip shows the current/unlocked ring.",
+      "html": "<span class=\"ds-chip ds-d1\">HS101</span> <span class=\"ds-chip ds-d2\">CS303</span> <span class=\"ds-chip ds-d3\">CS203</span> <span class=\"ds-chip ds-d4\">CS201</span> <span class=\"ds-chip ds-d5\">CS401</span> <span class=\"ds-chip ds-d3\" data-current>CS102</span>",
+      "css": ":host{--frame:#1f2b36;--frame-2:#2d3b48;--frame-ink:#eef2f4;--frame-muted:#a9b8c4;--board:#cdd5cb;--groove:#bcc6ba;--sheet:#f7f8f5;--sheet-2:#eceee9;--sheet-line:#d0d6ce;--card:#fdfdfb;--ink:#1b252e;--ink-2:#44525f;--ink-3:#5f6c78;--signal:#f5bd1f;--signal-deep:#9a6f00;--fault:#b3352a;--fault-tint:#f9e3de;--d1:#2c7550;--d2:#3561aa;--d3:#e8b21f;--d4:#e2752b;--d5:#b3352a;--display:'Barlow Condensed','Arial Narrow',sans-serif;--body:'Barlow',system-ui,sans-serif;--radius:3px;--ease-out:cubic-bezier(0.16,1,0.3,1);--lift:0 1px 0 rgba(20,30,40,0.12),0 2px 6px rgba(20,30,40,0.1)} .ds-d1{--tone:var(--d1);--tone-ink:#fff}.ds-d2{--tone:var(--d2);--tone-ink:#fff}.ds-d3{--tone:var(--d3);--tone-ink:var(--ink)}.ds-d4{--tone:var(--d4);--tone-ink:var(--ink)}.ds-d5{--tone:var(--d5);--tone-ink:#fff} .ds-chip{display:inline-flex;align-items:center;height:24px;padding:0 8px;border-radius:2px;background:var(--tone);color:var(--tone-ink);font-family:var(--display);font-size:0.95rem;font-weight:700;letter-spacing:0.02em;transition:box-shadow 200ms,transform 240ms var(--ease-out)} .ds-chip[data-current]{transform:translateY(-2px);box-shadow:0 0 0 2px var(--board),0 0 0 4px var(--signal-deep)}"
+    },
+    {
+      "name": "T-Card",
+      "kind": "card",
+      "refersTo": "tcard",
+      "description": "A course as a T-card: difficulty-toned tab with ID and credits over a card-stock body; the ranking key is underlined in signal.",
+      "html": "<div class=\"ds-tcard ds-d2\"><div class=\"ds-tcard-tab\"><span>CS101</span><small>4 cr</small></div><div class=\"ds-tcard-body\"><span class=\"ds-tcard-name\">Programming Fundamentals</span><span class=\"ds-tcard-meta\"><span class=\"is-key\">P5</span><span>D2</span><span>15 Jan 27</span></span></div></div>",
+      "css": ":host{--frame:#1f2b36;--frame-2:#2d3b48;--frame-ink:#eef2f4;--frame-muted:#a9b8c4;--board:#cdd5cb;--groove:#bcc6ba;--sheet:#f7f8f5;--sheet-2:#eceee9;--sheet-line:#d0d6ce;--card:#fdfdfb;--ink:#1b252e;--ink-2:#44525f;--ink-3:#5f6c78;--signal:#f5bd1f;--signal-deep:#9a6f00;--fault:#b3352a;--fault-tint:#f9e3de;--d1:#2c7550;--d2:#3561aa;--d3:#e8b21f;--d4:#e2752b;--d5:#b3352a;--display:'Barlow Condensed','Arial Narrow',sans-serif;--body:'Barlow',system-ui,sans-serif;--radius:3px;--ease-out:cubic-bezier(0.16,1,0.3,1);--lift:0 1px 0 rgba(20,30,40,0.12),0 2px 6px rgba(20,30,40,0.1)} .ds-d1{--tone:var(--d1);--tone-ink:#fff}.ds-d2{--tone:var(--d2);--tone-ink:#fff}.ds-d3{--tone:var(--d3);--tone-ink:var(--ink)}.ds-d4{--tone:var(--d4);--tone-ink:var(--ink)}.ds-d5{--tone:var(--d5);--tone-ink:#fff} .ds-tcard{width:170px;border-radius:3px;background:var(--card);box-shadow:var(--lift);overflow:hidden;transition:transform 240ms var(--ease-out),box-shadow 240ms} .ds-tcard:hover{transform:translateY(-1px);box-shadow:0 2px 0 rgba(20,30,40,0.12),0 6px 14px rgba(20,30,40,0.16)} .ds-tcard-tab{display:flex;align-items:center;justify-content:space-between;height:24px;padding:0 8px;background:var(--tone);color:var(--tone-ink);font-family:var(--display);font-weight:700;letter-spacing:0.02em} .ds-tcard-tab small{font-size:0.85rem;font-weight:600;opacity:0.9} .ds-tcard-body{display:flex;flex-direction:column;gap:2px;padding:5px 8px 7px;font-family:var(--body)} .ds-tcard-name{font-size:0.82rem;font-weight:500;line-height:1.25;color:var(--ink)} .ds-tcard-meta{display:flex;gap:8px;font-size:0.74rem;color:var(--ink-3)} .ds-tcard .is-key{color:var(--ink);font-weight:600;text-decoration:underline 2px var(--signal);text-underline-offset:3px}"
+    },
+    {
+      "name": "Semester Column",
+      "kind": "custom",
+      "refersTo": "column",
+      "description": "Recessed groove with a placard head, n/18 credit readout and the 18-segment gauge tinted by each card's difficulty.",
+      "html": "<div class=\"ds-col\"><div class=\"ds-col-head\"><span>Semester 2</span><span><b>4</b>/18</span></div><div class=\"ds-gauge\"><i class=\"ds-d3\"></i><i class=\"ds-d3\"></i><i class=\"ds-d3\"></i><i class=\"ds-d3\"></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div>",
+      "css": ":host{--frame:#1f2b36;--frame-2:#2d3b48;--frame-ink:#eef2f4;--frame-muted:#a9b8c4;--board:#cdd5cb;--groove:#bcc6ba;--sheet:#f7f8f5;--sheet-2:#eceee9;--sheet-line:#d0d6ce;--card:#fdfdfb;--ink:#1b252e;--ink-2:#44525f;--ink-3:#5f6c78;--signal:#f5bd1f;--signal-deep:#9a6f00;--fault:#b3352a;--fault-tint:#f9e3de;--d1:#2c7550;--d2:#3561aa;--d3:#e8b21f;--d4:#e2752b;--d5:#b3352a;--display:'Barlow Condensed','Arial Narrow',sans-serif;--body:'Barlow',system-ui,sans-serif;--radius:3px;--ease-out:cubic-bezier(0.16,1,0.3,1);--lift:0 1px 0 rgba(20,30,40,0.12),0 2px 6px rgba(20,30,40,0.1)} .ds-d1{--tone:var(--d1);--tone-ink:#fff}.ds-d2{--tone:var(--d2);--tone-ink:#fff}.ds-d3{--tone:var(--d3);--tone-ink:var(--ink)}.ds-d4{--tone:var(--d4);--tone-ink:var(--ink)}.ds-d5{--tone:var(--d5);--tone-ink:#fff} .ds-col{display:flex;flex-direction:column;gap:10px;width:180px;min-height:140px;padding:10px 8px 12px;border-radius:3px;background:var(--groove);box-shadow:inset 0 2px 4px rgba(30,45,35,0.22),inset 0 -1px 0 rgba(255,255,255,0.4)} .ds-col-head{display:flex;align-items:baseline;justify-content:space-between;padding:0 4px;font-family:var(--display);font-size:0.95rem;color:var(--ink-2)} .ds-col-head span:first-child{font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:var(--ink)} .ds-col-head b{font-size:1.15rem;color:var(--ink)} .ds-gauge{display:grid;grid-template-columns:repeat(18,1fr);gap:2px;height:10px;padding:0 2px} .ds-gauge i{border-radius:1px;background:rgba(27,37,46,0.12)} .ds-gauge i[class]{background:var(--tone)}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Planning Board",
+    "overview": "The interface is a piece of operations hardware: a grey-green enamelled steel board held in a dark slate frame, onto which the scheduling algorithm files colored T-cards into semester slots. Every surface belongs to that object. The frame (header, caption bar, the 8px border around the board) is dark slate; the board is enamel with a faint noise grain; semester columns are recessed grooves with printed slot rails; courses are cream T-cards whose colored tab is keyed to difficulty. Text that labels the board is set like a printed placard: Barlow Condensed, uppercase, tracked.\n\nDensity is high and meant to be read up close on a laptop. Hierarchy comes from material (frame vs board vs card), not from size jumps: the biggest type in the app is under 2rem. Color is functional twice over: the five-step difficulty key paints every course, and two signal colors carry state (signal yellow for \"this is the active step / selected / focus\", fault red for errors and cycles). The world refuses the sidebar-and-stat-card SaaS dashboard: there is no sidebar, no KPI tiles, no gradient hero.\n\nMotion is narrow and authored: cards file into their columns during a replay, chips bump in as they unlock, the active tab's signal bar rises from the frame edge. Everything collapses under `prefers-reduced-motion`.",
+    "keyCharacteristics": [
+      "Dark slate frame, enamel board, recessed column grooves, cream T-cards: depth is physical, not decorative.",
+      "Difficulty is always shown as the T-card tab color (D1 green to D5 red), and the same key fills the 18-segment credit gauge.",
+      "Signal yellow means \"active / current / selected\"; fault red means \"broken\"; neither is decoration.",
+      "Barlow Condensed uppercase placards label the board; Barlow carries reading text with tabular figures.",
+      "Small radii (2-6px) throughout: stamped steel and card stock, never pills."
+    ],
+    "rules": [
+      {
+        "name": "The Signal Means Now Rule",
+        "body": "Signal yellow marks the one thing that is active, current or selected (the step, the column, the tab, the sorted key). If two unrelated things glow yellow on one screen, one of them is wrong.",
+        "section": "colors"
+      },
+      {
+        "name": "The Card Colour Is Difficulty Rule",
+        "body": "The five tone colors encode difficulty and nothing else (benchmark series excepted, which reuse D2 blue and fault red as fast/slow). Never use a D-tone as a decorative accent.",
+        "section": "colors"
+      },
+      {
+        "name": "The Yellow Needs Ink Rule",
+        "body": "Text on signal yellow or D3/D4 is always dark ink; on light surfaces, signal shows as signal-deep for any line or text that must be read.",
+        "section": "colors"
+      },
+      {
+        "name": "The Placard Rule",
+        "body": "Anything that labels a part of the board (a column, a tray, a field, a table header) is Barlow Condensed, uppercase, tracked 0.06-0.08em, ink-2. Reading text is never set this way.",
+        "section": "typography"
+      },
+      {
+        "name": "The Ranking Underline Rule",
+        "body": "When the plan is ranked by a key, that field on every T-card is shown in ink at 600 with a 2px signal underline. The ranking key is visible on the cards themselves, not just in the control.",
+        "section": "typography"
+      },
+      {
+        "name": "The Rings Not Glows Rule",
+        "body": "State is shown with a crisp 2px signal ring (optionally separated by a 2px gap in the surface color), never with a colored blur glow.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "**Do** color every course by its difficulty tone (D1-D5), on T-cards, chips, gauge segments, graph nodes and form tiles alike.",
+      "**Do** reserve signal yellow for the single active / current / selected thing, and use signal-deep for any signal line or text on a light surface.",
+      "**Do** label board parts with uppercase Barlow Condensed placards tracked 0.06-0.08em in ink-2.",
+      "**Do** keep radii at 2-4px (6px only for the board shell) and borders at 1px hairlines.",
+      "**Do** show state with 2px rings and fills, and keep motion to the filing and bump vocabulary on `cubic-bezier(0.16, 1, 0.3, 1)`, disabled under reduced motion.",
+      "**Do** keep numerals tabular and show the reasoning in plain captions (counts, credits, deferrals) next to the visual."
+    ],
+    "donts": [
+      "**Don't** introduce a sidebar, stat-card KPI rows or a gradient hero; this is a board in a frame, not a SaaS dashboard.",
+      "**Don't** use a difficulty tone as decoration or for a meaning other than difficulty (outside the fast/slow chart series).",
+      "**Don't** put white text on signal yellow, D3 or D4.",
+      "**Don't** use pills, large radii or colored blur glows.",
+      "**Don't** set text smaller than 0.74rem, or put ink-3 text smaller than 0.85rem directly on board or groove enamel."
+    ]
+  }
+}

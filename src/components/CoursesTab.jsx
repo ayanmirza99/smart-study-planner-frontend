@@ -1,8 +1,10 @@
 import { useState } from 'react';
+import { Pencil, Trash2, Library, Repeat2, Eraser, CircleCheck, CircleAlert } from 'lucide-react';
 import { api } from '../api.js';
 import CourseForm from './CourseForm.jsx';
+import { formatDate } from './TCard.jsx';
 
-export default function CoursesTab({ courses, onChange }) {
+export default function CoursesTab({ courses, onChange, onLoadSample }) {
   const [editing, setEditing] = useState(null);
   const [message, setMessage] = useState(null);
 
@@ -35,9 +37,13 @@ export default function CoursesTab({ courses, onChange }) {
     }
   }
 
-  function loadSample(name) {
-    if (courses.length === 0 || confirm('This replaces all current courses. Continue?')) {
-      run(() => api.loadSample(name), 'Sample loaded');
+  async function loadSample(name) {
+    try {
+      if (await onLoadSample(name)) {
+        setMessage({ type: 'success', text: name === 'cycle' ? 'Cycle example loaded. Open Study Plan to see the error.' : 'Sample curriculum loaded' });
+      }
+    } catch (error) {
+      setMessage({ type: 'error', text: error.message });
     }
   }
 
@@ -48,8 +54,8 @@ export default function CoursesTab({ courses, onChange }) {
   }
 
   return (
-    <>
-      <section className="card">
+    <div className="courses-layout">
+      <section className="sheet form-sheet">
         <h2>{editing ? `Edit ${editing.id}` : 'Add a course'}</h2>
         <CourseForm
           key={editing ? editing.id : 'new'}
@@ -57,22 +63,28 @@ export default function CoursesTab({ courses, onChange }) {
           onSave={saveCourse}
           onCancel={() => setEditing(null)}
         />
+        {message && (
+          <p className={`status status-${message.type}`} role={message.type === 'error' ? 'alert' : 'status'}>
+            {message.type === 'error' ? <CircleAlert aria-hidden="true" /> : <CircleCheck aria-hidden="true" />}
+            <span>{message.text}</span>
+          </p>
+        )}
       </section>
 
-      {message && <p className={`message ${message.type}`}>{message.text}</p>}
-
-      <section className="card">
-        <div className="card-header">
-          <h2>Courses ({courses.length})</h2>
-          <div className="actions">
-            <button onClick={() => loadSample('courses')}>Load sample courses</button>
-            <button onClick={() => loadSample('cycle')}>Load cycle example</button>
-            <button className="danger" onClick={clearAll} disabled={courses.length === 0}>Clear all</button>
+      <section className="sheet list-sheet">
+        <div className="sheet-head row">
+          <h2>Courses <span className="count">{courses.length}</span></h2>
+          <div className="button-row">
+            <button className="btn" onClick={() => loadSample('courses')}><Library aria-hidden="true" />Load sample courses</button>
+            <button className="btn" onClick={() => loadSample('cycle')}><Repeat2 aria-hidden="true" />Load cycle example</button>
+            <button className="btn btn-danger" onClick={clearAll} disabled={courses.length === 0}><Eraser aria-hidden="true" />Clear all</button>
           </div>
         </div>
 
         {courses.length === 0 ? (
-          <p className="muted">No courses yet. Add one above or load a sample.</p>
+          <div className="empty-note">
+            <p><b>No courses yet.</b> Add one with the form, or load the 19-course sample curriculum.</p>
+          </div>
         ) : (
           <div className="table-scroll">
             <table>
@@ -80,28 +92,28 @@ export default function CoursesTab({ courses, onChange }) {
                 <tr>
                   <th>ID</th>
                   <th>Name</th>
-                  <th>Credits</th>
-                  <th>Priority</th>
-                  <th>Difficulty</th>
+                  <th className="num">Credits</th>
+                  <th className="num">Priority</th>
+                  <th className="num">Difficulty</th>
                   <th>Deadline</th>
                   <th>Prerequisites</th>
-                  <th></th>
+                  <th><span className="visually-hidden">Actions</span></th>
                 </tr>
               </thead>
               <tbody>
                 {courses.map((course) => (
-                  <tr key={course.id}>
-                    <td><strong>{course.id}</strong></td>
-                    <td>{course.name}</td>
-                    <td>{course.credits}</td>
-                    <td>{course.priority}</td>
-                    <td>{course.difficulty}</td>
-                    <td>{course.deadline}</td>
-                    <td>{course.prerequisites.join(', ') || '-'}</td>
-                    <td className="row-actions">
-                      <button onClick={() => setEditing(course)}>Edit</button>
-                      <button className="danger" onClick={() => deleteCourse(course.id)}>Delete</button>
-                    </td>
+                  <tr key={course.id} className={editing?.id === course.id ? 'is-editing' : undefined}>
+                    <td><span className={`id-chip d${course.difficulty}`}>{course.id}</span></td>
+                    <td className="name-cell">{course.name}</td>
+                    <td className="num">{course.credits}</td>
+                    <td className="num">{course.priority}</td>
+                    <td className="num">{course.difficulty}</td>
+                    <td>{formatDate(course.deadline)}</td>
+                    <td className="prereq-cell">{course.prerequisites.join(', ') || '–'}</td>
+                    <td className="row-actions"><div>
+                      <button className="icon-btn" onClick={() => { setEditing(course); document.querySelector('.form-sheet')?.scrollIntoView({ behavior: 'smooth', block: 'start' }); }} aria-label={`Edit ${course.id}`} title="Edit"><Pencil aria-hidden="true" /></button>
+                      <button className="icon-btn icon-btn-danger" onClick={() => deleteCourse(course.id)} aria-label={`Delete ${course.id}`} title="Delete"><Trash2 aria-hidden="true" /></button>
+                    </div></td>
                   </tr>
                 ))}
               </tbody>
@@ -109,6 +121,6 @@ export default function CoursesTab({ courses, onChange }) {
           </div>
         )}
       </section>
-    </>
+    </div>
   );
 }
